@@ -21,11 +21,11 @@
         default_layer {
             label = "Macro";
             bindings = <
-              &kp C_AC_SEARCH &kp B &kp C &kp D &kp E &kp F &kp G
-              &to 0 &kp I &kp J &kp K &kp L &kp M &kp N
-              &to 3 &kp P &kp Q &kp R &kp S &kp T &kp U
-              &sl 4 &kp W &kp X &kp Y &kp Z &kp N1 &kp N2 
-              &to 1 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9
+              &kp C_AC_SEARCH &kp B &kp 1 &kp 2 &kp 3 &kp 4 &kp 5
+              &to 0 &kp I &kp Q &kp W &kp E &kp R &kp T
+              &sl 1 &kp P &kp A &kp S &kp D &kp F &kp G
+              &kp RIGHT_GUI &kp W &kp Z &kp X &kp C &kp V &kp B 
+              &kp LEFT_WIN &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9
             >;
         };
     };
