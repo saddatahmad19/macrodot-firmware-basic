@@ -23,7 +23,7 @@
             bindings = <
               &kp C_AC_SEARCH &kp N0 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
               &to 0 &kp TAB &kp Q &kp W &kp E &kp R &kp T
-              &sl 1 &kp FN &kp A &kp S &kp D &kp F &kp G
+              &sl 1 &kp LCAPS &kp A &kp S &kp D &kp F &kp G
               &kp EQUAL &kp W &kp Z &kp X &kp C &kp V &kp B 
               &kp MINUS &kp LEFT_WIN &kp RIGHT_GUI &kp ENTER &kp LCTRL &kp LSHIFT &key_repeat
             >;
