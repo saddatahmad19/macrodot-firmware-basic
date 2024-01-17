@@ -1,4 +1,4 @@
-if SHIELD_GAMEPADX7
+if SHIELD_MACROBASIC
 
 config ZMK_KEYBOARD_NAME
   default "MacroBasic"    
