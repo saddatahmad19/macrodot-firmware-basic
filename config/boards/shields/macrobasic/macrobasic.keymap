@@ -21,32 +21,32 @@
         default_layer {
             label = "Gaming";
             bindings = <
-              &kp C_AC_SEARCH &kp N0 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
-              &to 0 &kp TAB &kp Q &kp W &kp E &kp R &kp T
-              &sl 1 &kp LCAPS &kp A &kp S &kp D &kp F &kp G
-              &sl 2 EQUAL &kp W &kp Z &kp X &kp C &kp V &kp B 
-              &kp MINUS &kp LEFT_WIN &kp RIGHT_GUI &kp ENTER &kp LCTRL &kp LSHIFT &key_repeat
+              &kp ESC &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
+              &kp C_NEXT &to 0 &kp Q &kp W &kp E &kp R &kp T
+              &kp C_PREV &mo 1 LCAPS &kp A &kp S &kp D &kp F &kp G
+              &mo C_BRIGHTNESS_INC &mo 2 &kp Z &kp X &kp C &kp V &kp B 
+              &kp C_BRIGHTNESS_DEC &kp LEFT_WIN &kp RIGHT_GUI &kp ENTER &kp LCTRL &kp LSHIFT &key_repeat
             >;
         };
 
         lower_layer {
           label = "Lower";
           bindings = <
-              &none &none &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-              &trans &kp TAB &kp Y &kp U &kp I &kp O &kp P
-              &trans &kp GRAVE &kp H &kp J &kp K &kp L &kp SEMI
-              &trans &kp BSLH &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH 
-              &none &trans &trans &trans &trans &trans &trans
+              &kp KP_MINUS &kp KP_PLUS &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+              &kp KP_MULTIPLY &trans &kp Y &kp U &kp I &kp O &kp P
+              &kp KP_SLASH &trans &kp H &kp J &kp K &kp L &kp SEMI
+              &kp KP_EQUAL &trans &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH 
+              &kp KP_DOT &kp KP_COMMA &trans &trans &trans &trans &trans
           >;
         };
 
         settings_layer {
           label = "Settings";
            bindings = <
-              &none &none &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-              &trans &kp TAB &kp Y &kp U &kp I &kp O &kp P
-              &trans &kp GRAVE &kp H &kp J &kp K &kp L &kp SEMI
-              &trans &kp BSLH &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH 
+              &none &none &none &none &none &none &none
+              &none &bt BT_CLEAR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+              &none &trans &kp H &kp J &kp K &kp L &kp SEMI
+              &none &trans &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH 
               &none &trans &trans &trans &trans &trans &trans
           >;
         }
