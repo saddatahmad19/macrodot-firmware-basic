@@ -49,6 +49,6 @@
               &none &trans &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH 
               &none &trans &trans &trans &trans &trans &trans
           >;
-        }
+        };
     };
 };
