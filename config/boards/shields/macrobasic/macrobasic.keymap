@@ -28,7 +28,7 @@
             bindings = <
               &kp ESC &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
               &kp C_NEXT &to 0 &kp Q &kp W &kp E &kp R &kp T
-              &kp C_PREV &mo 1 LCAPS &kp A &kp S &kp D &kp F &kp G
+              &kp C_PREV &mo 1 &kp A &kp S &kp D &kp F &kp G
               &kp C_BRIGHTNESS_INC &mo 2 &kp Z &kp X &kp C &kp V &kp B 
               &kp C_BRIGHTNESS_DEC &kp LEFT_WIN &kp RIGHT_GUI &kp ENTER &kp LCTRL &kp LSHIFT &key_repeat
             >;
