@@ -1,8 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-&encoder {
-  status = "okay";
-};
+# &left_encoder {
+#   status = "okay";
+# };
 
 / {
     chosen {
