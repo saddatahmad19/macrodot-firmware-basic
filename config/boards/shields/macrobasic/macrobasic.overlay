@@ -1,9 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-# &left_encoder {
-#   status = "okay";
-# };
-
 / {
     chosen {
         zmk,kscan = &default_kscan;

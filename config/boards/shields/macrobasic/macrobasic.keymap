@@ -33,7 +33,6 @@
               &kp C_BRIGHTNESS_DEC &kp LEFT_WIN &kp RIGHT_GUI &kp ENTER &kp LCTRL &kp LSHIFT &key_repeat
             >;
 
-            # sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
