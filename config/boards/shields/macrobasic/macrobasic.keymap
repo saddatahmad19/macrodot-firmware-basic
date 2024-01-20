@@ -6,7 +6,6 @@
       usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
 };
 
-
 / {
     behaviors {
         ht: hold-tap {
@@ -55,6 +54,6 @@
               &none &trans &none &none &none &none &none 
               &none &trans &trans &trans &trans &trans &trans
           >;
-        }
+        };
     };
 };
