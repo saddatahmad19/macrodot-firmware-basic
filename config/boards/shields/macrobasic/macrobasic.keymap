@@ -33,7 +33,7 @@
               &kp BACKSPACE &kp LEFT_WIN &kp RIGHT_GUI &kp ENTER &kp LCTRL &kp LSHIFT &kp SPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         };
 
@@ -47,7 +47,7 @@
               &kp KP_DOT &kp KP_COMMA &trans &trans &trans &trans &trans
           >;
 
-          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DOWN>;
+          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         settings_layer {
