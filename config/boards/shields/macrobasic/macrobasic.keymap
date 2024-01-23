@@ -29,9 +29,11 @@
               &kp ESC &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
               &kp C_NEXT &to 0 &kp Q &kp W &kp E &kp R &kp T
               &kp C_PREV &mo 1 &kp A &kp S &kp D &kp F &kp G
-              &kp C_BRIGHTNESS_INC &mo 2 &kp Z &kp X &kp C &kp V &kp B 
-              &kp C_BRIGHTNESS_DEC &kp LEFT_WIN &kp RIGHT_GUI &kp ENTER &kp LCTRL &kp LSHIFT &key_repeat
+              &kp RETURN &mo 2 &kp Z &kp X &kp C &kp V &kp B 
+              &kp BACKSPACE &kp LEFT_WIN &kp RIGHT_GUI &kp ENTER &kp LCTRL &kp LSHIFT &kp SPACE
             >;
+
+            sensor-bindings = <&none C_VOL_UP C_VOL_DOWN>;
 
         };
 
@@ -44,6 +46,8 @@
               &kp KP_EQUAL &trans &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH 
               &kp KP_DOT &kp KP_COMMA &trans &trans &trans &trans &trans
           >;
+
+          sensor-bindings = <&none C_VOL_UP C_VOL_DOWN>;
         };
 
         settings_layer {
@@ -55,6 +59,8 @@
               &none &trans &none &none &none &none &none 
               &none &trans &trans &trans &trans &trans &trans
           >;
+
+          sensor-bindings = <&none C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
     };
 };
