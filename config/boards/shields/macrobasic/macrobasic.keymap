@@ -33,7 +33,7 @@
               &kp BACKSPACE &kp LEFT_WIN &kp RIGHT_GUI &kp ENTER &kp LCTRL &kp LSHIFT &kp SPACE
             >;
 
-            sensor-bindings = <&none C_VOL_UP C_VOL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DOWN>;
 
         };
 
@@ -60,7 +60,7 @@
               &none &trans &trans &trans &trans &trans &trans
           >;
 
-          sensor-bindings = <&none C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+          sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
     };
 };
