@@ -1,6 +1,6 @@
 if SHIELD_MACROBASIC
 
 config ZMK_KEYBOARD_NAME
-  default "MacroBasic"    
+  default "MacroBasic"
 
 endif
