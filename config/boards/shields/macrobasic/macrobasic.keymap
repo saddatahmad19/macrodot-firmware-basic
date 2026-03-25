@@ -23,19 +23,65 @@
 
             bindings = <
                 /* Row 1: F1, 1–5, Esc */
-                &kp LS(LG(SLASH)) &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp ESC
+                &kp LS(LG(SLASH)) &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp ESCAPE
 
                 /* Row 2: F2, PgUp, Mod+T, Up (tap) / Mod+i (hold), Mod+d, Mod+Shift+F, PrtSc */
                 &sk LGUI &kp PG_UP &kp LG(T) &nav LG(I) UP &kp LG(D) &kp LS(LG(F)) &kp PRINTSCREEN
 
-                /* Row 3: F3 sk Mod+Ctrl, PgDn, arrows + Ins, Num (unbound) */
-                &sk LG(LCTRL) &kp PG_DN &nav LS(LG(LEFT)) LEFT &nav LG(U) DOWN &nav LS(LG(RIGHT)) RIGHT &kp LS(LC(LG(LA(F)))) &none
+                /* Row 3: F3 sk Mod+Ctrl, PgDn, arrows + Ins, Firefox, Mod+R */
+                &sk LG(LCTRL) &kp PG_DN &nav LS(LG(LEFT)) LEFT &nav LG(U) DOWN &nav LS(LG(RIGHT)) RIGHT &kp LC(LS(LA(LG(F)))) &kp LG(R)
 
                 /* Row 4: F4 sk Mod+Shift+Ctrl, 6–9, *→Mod+Home, End→Mod+End */
                 &sk LS(LG(LCTRL)) &kp N6 &kp N7 &kp N8 &kp N9 &kp LG(HOME) &kp LG(END)
 
-                /* Row 5: F5–F8 stickies, volume mute, mic mute (F20), sleep */
-                &sk LG(LALT) &sk LGUI &sk LS(LG(LCTRL)) &sk LA(LCTRL) &kp C_MUTE &kp F20 &kp C_SLEEP
+            /* Row 5: Momentary layer keys, then existing controls */
+                &mo 1 &mo 2 &sk LS(LG(LCTRL)) &sk LA(LCTRL) &kp C_MUTE &kp F20 &kp ENTER
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        move_column_layer {
+            display-name = "Move Column";
+
+            bindings = <
+                /* Row 1 */
+                &none &none &none &none &none &none &none
+
+                /* Row 2 (keys 3-5 active) */
+                &none &none &kp LG(LC(U)) &kp LG(LC(UP)) &kp LG(LC(I)) &none &none
+
+                /* Row 3 (keys 3-5 active) */
+                &none &none &kp LG(LC(LEFT)) &kp LG(LC(DOWN)) &kp LG(LC(RIGHT)) &none &none
+
+                /* Row 4 */
+                &none &none &none &none &none &none &none
+
+                /* Row 5 */
+                &mo 1 &none &none &none &none &none &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        move_monitor_layer {
+            display-name = "Move Monitor";
+
+            bindings = <
+                /* Row 1 */
+                &none &none &none &none &none &none &none
+
+                /* Row 2 (keys 3-5 active) */
+                &none &none &kp LG(LC(U)) &kp LC(LS(LG(UP))) &kp LG(LC(I)) &none &none
+
+                /* Row 3 (keys 3-5 active) */
+                &none &none &kp LC(LS(LG(LEFT))) &kp LC(LS(LG(DOWN))) &kp LC(LS(LG(RIGHT))) &none &none
+
+                /* Row 4 */
+                &none &none &none &none &none &none &none
+
+                /* Row 5 */
+                &none &mo 2 &none &none &none &none &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
